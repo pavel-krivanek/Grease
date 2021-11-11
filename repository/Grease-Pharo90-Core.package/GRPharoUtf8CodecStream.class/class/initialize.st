@@ -1,5 +1,8 @@
 class initialization
 initialize
+
+	true ifTrue: [ ^ true ].
+
 	(Smalltalk hasClassNamed: #UTF8TextConverter) "guard for Squeak 37"
 		ifFalse: [ ^ self ].
 
